@@ -1,16 +1,12 @@
-// Code your solutions in this file
-const writeCards = (name, occasion) => {
-  let allCards = [];
-  for (var i = 0; i < name.length; i++) {
-    allCards.push(`Thank you, ${name[i]}, for the wonderful ${occasion} gift!`);
+const writeCards = (arr, ev) => {
+  for(let i = 0; i < arr.length; i++) {
+    console.log(`Thank you, ${arr[i]}, for the wonderful ${ev} gift!`);
   }
-
-  return allCards;
 };
 
-const countdown = (arg) => {
-  while(arg >= 0){
-    console.log(arg);
-    arg--;
-  }
-}
+const countdown = (int) => {
+  while (int > 0) {
+    console.log(int);
+    int -= 1;
+  };
+};
